@@ -19,7 +19,17 @@ on:
               
 
 jobs:
-  deploy:
+  deploy1:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Deploying to ${{ inputs.environment }}"
+
+    deploy2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploying to ${{ inputs.environment }}"
+
+    deploy3:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploying to ${{ inputs.environment }}"     
