@@ -1,0 +1,25 @@
+name: Workflow dispatch Manual Release
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Target deployment environment'
+        required: true
+        default: 'staging'
+        type: choice
+        options:
+          - staging
+          - production
+
+        message :
+           description: 'Target deployment environment'
+            required: true
+            default: 'Good morning'
+            type: string
+              
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploying to ${{ inputs.environment }}"
