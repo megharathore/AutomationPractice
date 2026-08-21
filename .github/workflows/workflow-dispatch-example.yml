@@ -12,7 +12,7 @@ on:
           - production
 
         message :
-           description: 'Target deployment environment'
+           description: 'Target deployment environment1'
            required: true
            default: 'Good morning'
            type: string 
