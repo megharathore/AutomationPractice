@@ -1,0 +1,23 @@
+# .github/workflows/greeting.yml
+name: Daily Greeting
+on:
+  schedule:
+    - cron: '0/5 * * * *' # Runs every weekday at 9 AM UTC
+
+jobs:
+  greet1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Good morning, team!"
+
+
+  greet2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Good afternoon, team!"    
+
+
+  greet3:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Good morning, team!"    
