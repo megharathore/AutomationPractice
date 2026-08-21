@@ -13,9 +13,9 @@ on:
 
         message :
            description: 'Target deployment environment'
-            required: true
-            default: 'Good morning'
-            type: string
+           required: true
+           default: 'Good morning'
+           type: string 
               
 
 jobs:
